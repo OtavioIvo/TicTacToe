@@ -1,0 +1,9 @@
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/TicTacToe.dir
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/TicTacToe_autogen_timestamp_deps.dir
+C:/Users/E1395059/OneDrive - Aspen Technology, Inc/Mette/CppPlayground/TicTacToe/TicTacToe/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/TicTacToe_autogen.dir
