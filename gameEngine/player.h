@@ -8,7 +8,7 @@
 class Player
 {
 protected:
-    Player(std::shared_ptr<MarkBase> mark);
+    Player(std::shared_ptr<Mark> mark);
 public:
     Player() = delete;
     Player(Player&& in) = default;
@@ -21,9 +21,9 @@ public:
 
     virtual void MakeAPlay(Board& board) = 0;
 
-    const std::shared_ptr<MarkBase>& GetMarker() const;
+    const std::shared_ptr<Mark>& GetMarker() const;
 private:
-    std::shared_ptr<MarkBase> _marker;
+    std::shared_ptr<Mark> _marker;
 };
 
 class PlayerMachine : public Player

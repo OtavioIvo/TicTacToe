@@ -4,44 +4,30 @@
 #include <memory>
 
 
-template<class Base, class Child>
-class M : public Base
+class Mark : public std::enable_shared_from_this<Mark>
 {
-protected:
-    M() : Base() {};
 public:
-    static std::shared_ptr<Base> Create() {return std::static_pointer_cast<Base>(std::make_shared<Child>()); }
+    std::shared_ptr<Mark> MakeMark() { return shared_from_this(); }
+    virtual ~Mark() {}
 };
 
-
-
-
-class MarkBase : public std::enable_shared_from_this<MarkBase>
+class MarkMachine : public Mark
 {
-protected:
-    MarkBase() {};
+private:
+    struct Private{ explicit Private() = default; };
 public:
-
-    std::shared_ptr<MarkBase> MakeMark() { return shared_from_this(); }
-    virtual ~MarkBase() {}
-};
-
-
-
-
-class MarkMachine : public M<MarkBase, MarkMachine>
-{
-//MarkMachine() : M() {}
-    public:
-    //static std::shared_ptr<MarkBase> Create() { return std::make_shared<MarkMachine>(); }
+    MarkMachine(Private) {}
+    static std::shared_ptr<Mark> Create() {return std::make_shared<MarkMachine>(Private()); }
     ~MarkMachine() {}
 };
 
-class MarkUser : public M<MarkBase, MarkUser>
+class MarkUser : public Mark
 {
-
+private:
+    struct Private{ explicit Private() = default; };
 public:
-  //  MarkUser() : M() {}
+    MarkUser(Private) {}
+    static std::shared_ptr<Mark> Create() {return std::make_shared<MarkUser>(Private()); }
     ~MarkUser() {}
 };
 

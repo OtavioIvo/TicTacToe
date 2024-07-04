@@ -3,10 +3,10 @@
 #include "player.h"
 #include "playermark.h"
 
-Player::Player(std::shared_ptr<MarkBase> mark) : _marker(mark->MakeMark())
+Player::Player(std::shared_ptr<Mark> mark) : _marker(mark->MakeMark())
 {}
 
-const std::shared_ptr<MarkBase>& Player::GetMarker() const
+const std::shared_ptr<Mark>& Player::GetMarker() const
 {
     return _marker;
 }
@@ -43,7 +43,6 @@ PlayerManager::PlayerManager()
             std::make_unique<PlayerUser>()
         })
 {
-    MarkMachine();
 
 }
 
