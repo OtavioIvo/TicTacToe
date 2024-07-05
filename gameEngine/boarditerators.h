@@ -64,13 +64,13 @@ template<class _BD>
 struct BoardRef
 {
     using value = _BD;
-    using pointer = value*;
-    using const_pointer = const pointer;
+    using reference = const value*;
+    using const_pointer_const_value = const value* const;
 public:
-    BoardRef(const_pointer board) : _board(board) {}
-    auto& Ref() { return _board;}
+    BoardRef(const_pointer_const_value board) : _board(board) {}
+    reference Ref() const { return _board;}
 private:
-    const_pointer _board;
+    const_pointer_const_value _board;
 };
 
 template<class _BD, class _IT, std::size_t _SROW, std::size_t _SCOL, std::size_t _EROW, std::size_t _ECOL>
@@ -78,10 +78,9 @@ struct BoardIterDiag : public BoardRef<_BD>
 {
     using iterator = _IT;
     using const_iterator = const _IT;
-    using board = BoardRef<_BD>;
-    using const_board = const BoardRef<_BD>;
     using BoardRef<_BD>::BoardRef;
     using BoardRef<_BD>::Ref;
+
     iterator begin()
     {
         return iterator(&Ref()->Space(_SROW, _SCOL));

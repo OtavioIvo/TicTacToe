@@ -26,7 +26,7 @@ public:
     const std::shared_ptr<Mark>& GetSpace(std::size_t row, std::size_t col) const { return operator()(row, col); }
     constexpr std::size_t SizeRow() const noexcept { return BoardDimensions::Rows(); }
     constexpr std::size_t SizeColumn() const noexcept { return BoardDimensions::Columns(); }
-    DiagonalIter IterDiagonal() { return const_diagonal_iter(this);}
+    DiagonalIter IterDiagonal() const { return const_diagonal_iter(this);}
     AntiDiagonalIter IterAntiDiagonal() { return AntiDiagonalIter(this); }
     ColumnIter IterColumn(std::size_t column) { return ColumnIter(this, column); }
     RowIter IterRow(std::size_t row) { return RowIter(this, row); }
