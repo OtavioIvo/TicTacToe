@@ -19,25 +19,11 @@ public:
 
     virtual ~Player() {}
 
-    virtual void MakeAPlay(Board& board) = 0;
+    virtual bool MakeAPlay(Board& board) = 0;
 
     const std::shared_ptr<Mark>& GetMarker() const;
 private:
     std::shared_ptr<Mark> _marker;
-};
-
-class PlayerMachine : public Player
-{
-public:
-    PlayerMachine();
-    void MakeAPlay(Board& board) override;
-};
-
-class PlayerUser : public Player
-{
-public:
-    PlayerUser();
-    void MakeAPlay(Board& board) override;
 };
 
 

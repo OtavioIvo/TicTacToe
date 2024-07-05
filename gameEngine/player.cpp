@@ -2,6 +2,8 @@
 
 #include "player.h"
 #include "playermark.h"
+#include "playermachine.h"
+#include "playeruser.h"
 
 Player::Player(std::shared_ptr<Mark> mark) : _marker(mark->MakeMark())
 {}
@@ -11,29 +13,7 @@ const std::shared_ptr<Mark>& Player::GetMarker() const
     return _marker;
 }
 
-PlayerMachine::PlayerMachine() : Player(MarkMachine::Create())
-{}
 
-
-void PlayerMachine::MakeAPlay(Board&)
-{
-
-
-}
-
-
-
-PlayerUser::PlayerUser() : Player(MarkUser::Create())
-{
-
-}
-
-
-void PlayerUser::MakeAPlay(Board&)
-{
-
-
-}
 
 
 PlayerManager::PlayerManager()

@@ -25,6 +25,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         gameEngine/board.cpp gameEngine/board.h gameEngine/boardreferee.cpp gameEngine/boardreferee.h gameEngine/match.cpp gameEngine/match.h gameEngine/player.cpp gameEngine/player.h gameEngine/playermark.h gameEngine/winningstates.cpp gameEngine/winningstates.h
         gameEngine/board.cpp gameEngine/board.h gameEngine/boardreferee.cpp gameEngine/boardreferee.h gameEngine/match.cpp gameEngine/match.h gameEngine/player.cpp gameEngine/player.h gameEngine/playermark.h gameEngine/winningstates.cpp gameEngine/winningstates.h
+        gameEngine/playeruser.h gameEngine/playeruser.cpp
+        gameEngine/playermachine.h gameEngine/playermachine.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TicTacToe APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
